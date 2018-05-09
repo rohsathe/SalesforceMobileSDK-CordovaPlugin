@@ -351,6 +351,7 @@ public class SalesforceDroidGapActivity extends CordovaActivity {
             JSONObject credentials = client.getJSONCredentials();
             if (callbackContext != null) {
                 callbackContext.success(credentials);
+				webAppLoaded = true;
             }
         } else {
             if (callbackContext != null) {
